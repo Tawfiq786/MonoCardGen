@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monopoly Card Generator</title>
+    <link rel="shortcut icon" type="image/x-icon" href="rich.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <p class="title white">MONOPOLY CARD<br /><span>Generator</span></p>
+        <div class="input-section">
+          <div class="input-section-part">
+            <p class="input-section-titles">Property Name:</p>
+            <input
+              maxlength="17"
+              type="text"
+              class="input-section-inputbox input-property-name"
+            />
+          </div>
+          <div class="input-section-part">
+            <p class="input-section-titles">Property Color:</p>
+            <input type="color" class="input-section-inputcolor input-color" />
+          </div>
+          <div class="input-section-part">
+            <p class="input-section-titles">Property Rent:</p>
+            <input
+              maxlength="2"
+              type="text"
+              class="input-section-inputbox input-property-rent"
+            />
+          </div>
+          <button type="button" class="download-image" onclick="downloadImage()">Download Now!</button>
+        </div>
+        
+      </div>
+      <div class="right-side">
+        <div class="card">
+          <div class="card-inner-frame">
+            <div class="card-inner-frame-title">
+              <p class="title-deed">TITLE DEED</p>
+              <p class="property-name"></p>
+            </div>
+            <div class="card-inner-frame-rent">
+              <div class="rent-list-item">
+                <p>Rent</p>
+                <p class="base-rent">₩</p>
+              </div>
+              <div class="rent-list-item">
+                <p>Rent with color set</p>
+                <p class="combo-rent"></p>
+              </div>
+              <div class="rent-list-item">
+                <p>Rent with 1 House</p>
+                <p class="one-house"></p>
+              </div>
+              <div class="rent-list-item">
+                <p>Rent with 2 House</p>
+                <p class="two-house"></p>
+              </div>
+              <div class="rent-list-item">
+                <p>Rent with 3 House</p>
+                <p class="three-house"></p>
+              </div>
+              <div class="rent-list-item">
+                <p>Rent with 4 House</p>
+                <p class="four-house"></p>
+              </div>
+              <div class="rent-list-item">
+                <p>Rent with Hotel</p>
+                <p class="hotel"></p>
+              </div>
+              <div class="straight-line"></div>
+              <div class="rent-list-item">
+                <p>House cost</p>
+                <p class="house-cost"></p>
+              </div>
+              <div class="rent-list-item">
+                <p>Hotel cost</p>
+                <p class="hotel-cost"></p>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="message">
+          <p>Download Complete</p>
+          <span>Thank you for Using MONOPOLY CARD Generator</span>
+          <div class="reset-btn">Reset</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
